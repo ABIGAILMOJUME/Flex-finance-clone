@@ -307,3 +307,81 @@ font-family: encode sans;
   height: 52px;
   width :110px;
 }
+
+/*for Contact us div*/
+.contact-box{
+  height: 250px;
+}
+
+.contact-title{
+  text-align: start;
+  font-weight: 800;
+}
+/*media queries for contact box*/
+@media(max-width:576px){
+  .contact-title{
+    text-align: center;
+  }
+  .contact-para{
+    margin-left: 20px;
+
+  }
+  .contact-box{
+    min-height: 280px;
+  }
+}
+
+.contact-para{
+  font-family: encode sans;
+    font-weight: 500;
+    font-size: 1.143em;
+    line-height: 24px;
+    letter-spacing: .045em;
+    color: hsl(210, 9%, 29%);
+    line-height: 20px;
+    text-align: start;
+    font-weight: 500;
+}
+
+.contact-nums{
+  background:#f8fbfe;
+  text-decoration: none;
+  width: 264px;
+  height: 45px;
+  border-radius: 10px;
+  display: block;
+  font-family: encode sans;
+  color: #444b52;
+  font-weight: bolder;
+}
+
+.contact-numsimg{
+  float: left;
+ padding: 2px;
+}
+
+.contact-email{
+  background:#f8fbfe;
+  text-decoration: none;
+  width: 320px;
+  height: 55px;
+  border-radius: 10px;
+  display: block;
+  font-family: encode sans;
+  color: #444b52;
+  font-weight: bolder;
+
+}
+
+.contact-socials{
+  float: left;
+}
+
+.contact-img{
+  width: 500px;
+  height: 400px;
+  margin-top: none;
+
+
+}
+

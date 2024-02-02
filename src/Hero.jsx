@@ -25,6 +25,15 @@ import disrupt from './images2/DisruptAfricalogo.webp'
 import techp from './images2/Techpoint1.webp'
 import techc from './images2/techcaballogo.webp'
 import buisness from './images2/businessday1.webp'
+import whatsapp from './images2/whatsappicon.webp'
+import call from './images2/phoneicon.webp'
+import email from './images2/emailicon.webp'
+import facebook from './images2/facebooksocial2.webp'
+import twitter from './images2/twittericon.webp'
+import instagram from './images2/instagramicon.webp'
+import linkedin from './images2/linkedinlogo.webp'
+import youtube from './images2/youtubesocials2.webp'
+import contactus from './images2/contactusimage.webp'
 import { Card,CardBody,CardTitle,CardText,} from "reactstrap";
 import Slides from "./Slides";
 
@@ -432,7 +441,83 @@ const Hero = () => {
           </Row>
       </Container>
                     </div>
-          </div>
+                {/*code for contact us div*/}
+                <div className="contact-box">
+                <h2>
+                    <div className="my-3 py-3 txt-brands display-6 contact-title">
+                    Contact Us
+                    </div>
+               </h2>
+               <p className="contact-para text-muted">Join over 2,500 business today and start spending smarter</p>
+               <div className="" >
+               <a href="https://wa.me/2348090557742" className="contact-nums my-3 p-2 mx-1 " >
+                    <img src={whatsapp} alt="whasapp_icon"className="contact-numsimg my-1 "/>
+                    <h3>+2348090557742</h3>
+                     </a>
+
+                     <a href="+234-809-055-7742" className="contact-nums my-3 p-2 mx-2 ">
+                    <img src={call} alt="whasapp_icon" className="contact-numsimg my-1 "/>
+                    <h3>+2348090557742</h3>
+                     </a> 
+               </div>
+               
+               <div > {/*email*/}
+                      <a href="gethelp@flexfinance.ai" className="contact-email my-4 p-2">
+                    <img src={email} alt="whasapp_icon" className="contact-numsimg my-1 "/>
+                    <h3>gethelp@flexfinance.ai</h3>
+                     </a> 
+                </div>
+                
+                <div>{/*social media icons*/}
+                <a href="www.facebook.com" className="contact-socials m-3">
+                    <img src={facebook} alt="socialmediaicon" style={{
+                         width:38
+                    }}/>
+                     </a> 
+                     <a href="www.instagram.com" className="contact-socials m-3">
+                    <img src={instagram} alt="socialmediaicon" style={{
+                         width:38
+                    }}/>
+                     </a> 
+                     <a href="www.twitter.com" className="contact-socials m-3">
+                    <img src={twitter} alt="socialmediaicon" style={{
+                         width:38
+                    }}/>
+                     </a> 
+                     <a href="www.linkedin.com" className="contact-socials m-3">
+                    <img src={linkedin} alt="socialmediaicon" style={{
+                         width:38
+                    }}/>
+                     </a> 
+                     <a href="www.youtube.com" className="contact-socials m-3 ">
+                    <img src={youtube} alt="socialmediaicon" style={{
+                         width:38
+                    }}/>
+                     </a> 
+                </div>
+          
+                <div className="">
+                    <img className='img-fluid contact-img float-end'
+                 src={contactus} 
+                 alt="contactus"
+                 style={{
+                    width:500,
+                    height:400
+                 }}/>
+                    </div>
+                   
+                </div> 
+                </div>
+
+         
+         
+         
+         
+         
+         
+         
+         
+         
           </div>
          </div> 
     </div>   
