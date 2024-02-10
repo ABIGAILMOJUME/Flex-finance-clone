@@ -87,14 +87,17 @@ font-family: encode sans;
  .hero-bg{
   background-image:url("./images/herobg.png") !important;
   text-align: center;
+  min-height:fit-content;
   background-size: cover;
-  height: 450px;
   margin-top: 50px;
  }
 
 
  .hero-img{
-  background-color: none;
+  width: 650px;
+    max-height: 67vh;
+    height: 67vh ;
+    object-fit: contain;
  }
 
 
@@ -145,8 +148,9 @@ font-family: encode sans;
  
   .hero-sndbtn{
    border-radius: 23px !important;
-   border-width: 1px;
+   border-width: 1px solid;
     color: #f7b025;
+    border-color: #f7b025;
     -webkit-transition: all .5s;
     transition: all .5s;
     height: 50px;
@@ -166,9 +170,7 @@ font-family: encode sans;
 
 /*Media query for hero section*/
 @media(max-width:576px){
-  .hero-bg{
-    height: 770px;
-  }
+
   .hero-img{
     height: 230px;
     width: 230px;
@@ -176,10 +178,11 @@ font-family: encode sans;
   }
   .hero-firstbtn{
     width: 100%;
-   
+  
   } 
   .hero-sndbtn{
     width: 100%;
+    
   }
  }
 
@@ -191,8 +194,8 @@ font-family: encode sans;
 }
 /*for sponsor brands image*/
 .brands{
-  height: 60px;
-  width: 150px;
+  height: 53px;
+  width: 140px;
 }
 
 /*for text beneath brands*/
@@ -201,7 +204,13 @@ font-family: encode sans;
   font-weight: 700;
 }
 
+.big-img{
+  max-width: 1050px;
+  height:auto;
+}
+
 /*for  title of first set of cards*/
+
 .title-fstcards{
   color: #02265c;
   font-weight: 700;
@@ -209,7 +218,13 @@ font-family: encode sans;
 
 /*for body of first set of cards*/
 .body-fstcards{
-  border-radius: 7px;
+  
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(242, 238, 230);
+  border-radius: 10px;
+  
 }
 
 /*for text in first set of cards*/
@@ -217,20 +232,25 @@ font-family: encode sans;
   font-weight: 600;
 }
 
+.btn-fstcards{
+  border: none !important;
+}
+
 /*for partners background*/
 .partners-bg{
   background-image:url("./images/alicebluebg.png") !important;
   text-align: center;
   background-size: cover;
-  height: 350px;
+  min-height: 350px;
 
 }
 
 
+
 /*for brands under our partners*/
 .partners-brand{
-  height:50px;
-  width: 120px;
+  height:55px;
+  width: 135px;
 }
 
 @media(max-width:576px){
@@ -245,7 +265,6 @@ font-family: encode sans;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(237, 239, 242);
-    border-image: initial;
     border-radius: 10px;
     padding: 10px 30px;
   text-align: start;
@@ -274,24 +293,18 @@ font-family: encode sans;
   background: #011636;
     clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
     margin-top: 100px;
-    height: 370px;
+    min-height: 370px;
     outline: none !important;
 }
 
-.security-polytxt{
-  margin-top: 120px;
-  margin-left: 120px;
+
+.security-img{
+ height: 235px;
+ max-width: 375px;
 }
 
-@media(max-width:576px){
-  .security-poly{
-    height: 540px;
-  }
-  .security-polytxt{
-    margin-right: 110px;
-   
-  }
-}
+
+
 
 
 
@@ -305,13 +318,10 @@ font-family: encode sans;
 
 .news-brand{
   height: 52px;
-  width :110px;
+  width :120px;
 }
 
 /*for Contact us div*/
-.contact-box{
-  height: 250px;
-}
 
 .contact-title{
   text-align: start;
@@ -330,7 +340,9 @@ font-family: encode sans;
     min-height: 280px;
   }
 }
-
+.contact-box{
+  margin-top: 80px;
+}
 .contact-para{
   font-family: encode sans;
     font-weight: 500;
@@ -385,3 +397,84 @@ font-family: encode sans;
 
 }
 
+.join-poly{
+   min-height: 280px;
+    margin-bottom: -20px;
+    background: rgba(131,185,235,0.06);
+    -webkit-clip-path: polygon(0% 7%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0% 7%, 100% 0, 100% 100%, 0 100%);
+    width: 100%;
+    margin-top: 80px;
+    padding: 80px;
+   
+    
+}
+
+.join-heading{
+  font-family: "Encode Sans";
+  color: #02265c;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 40px;
+  width: 85%;
+  text-align: center;
+  margin-left: 40px !important;
+
+
+}
+
+.join-btn{
+  border: none !important; 
+}
+
+.footer-poly{
+  clip-path: polygon(0% 7%, 100% 0, 100% 100%, 0 100%);
+  background: #011636;
+    color: #fff;
+    
+    min-height: 200px;
+  padding-top: 30px;
+}
+
+.footer-header{
+  font-family: "Nexa Bold",sans-serif;
+    font-weight: bold;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0 !important;
+    color: #54a9f7;
+  
+  
+}
+
+.footer-ul{
+  list-style-type: none;
+  line-height: 27px;
+   font-size: 1rem;
+   width: 100%;
+   font-weight: 600;
+}
+
+
+
+
+.footer-logo{
+  width: 100px;
+  height: 45px;
+}
+
+
+.final-footer{
+  background-color:#02265c;
+  padding-top: 8px;
+  
+}
+
+.final-footerpara{
+  font-family: "Encode Sans";
+    color: rgb(255, 255, 255);
+    font-size: 1.071em;
+    line-height: 24px;
+    font-weight: 500 !important;
+}

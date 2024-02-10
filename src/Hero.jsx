@@ -34,13 +34,17 @@ import instagram from "./images2/instagramicon.webp";
 import linkedin from "./images2/linkedinlogo.webp";
 import youtube from "./images2/youtubesocials2.webp";
 import contactus from "./images2/contactusimage.webp";
+import logo from './images/Flex (4).webp'
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 import Slides from "./Slides";
 
 const Hero = () => {
   return (
+    <> 
+    <Row>    
     <div className="center-align hero-bg px-3 px-sm-4 py-3 py-sm-5">
       <div className="row justify-content-center ">
+      <Col sm={12} xs="12" md="6">
         <div className="col-md text center text-md-start">
           <h1>
             <div className="display-2 hero-headingone">Save time & money on your business spending</div>
@@ -49,22 +53,25 @@ const Hero = () => {
             Flex empowers your business with all the tools needed to manage your company's spending on one platform, Gain 100% visibility and control over every
             money spent.
           </p>
-          <Button className=" mx-2 my-1 hero-firstbtn hero-firstbtn:hover">Sign Up Now</Button>
-          <Button outline className="mx-2 my-1 hero-sndbtn hero-sndbtn:hover">
-            ▶ Watch How It Works
-          </Button>
+          <Button className=" mx-2 hero-firstbtn hero-firstbtn:hover my-1">Sign Up Now</Button>
+          <Button outline className="mx-2  hero-sndbtn hero-sndbtn:hover my-1"> ▶ Watch How It Works </Button>
         </div>
-        <div className="col-md-4 text-center">
+        </Col>
+        <Col sm={12} xs="12" md="6">
+        <div className="col-md-12 text-center m-3 mt-sm-5">
           <img className="img-fluid hero-img" src={image} alt="ladyyellow" />
         </div>
-
-        <Container className="my-3 p-3 brands-bg">
-          <Row md={6} xs={3}>
+        </Col>
+        </div>
+        </div>
+        </Row>
+ 
+          <Row md={6} xs={3} sm={3} className="p-3 brands-bg">
             <Col>
               <img src={noun} alt="noun" className="brands" />
             </Col>
             <Col>
-              <img src={ntel} alt="ntel" className="brands" />
+              <img src={ntel} alt="ntel" className="brands" />  
             </Col>
             <Col>
               <img src={sportlag} alt="sportlag" className="brands" />
@@ -79,35 +86,32 @@ const Hero = () => {
               <img src={talentq} alt="talentq" className="brands" />
             </Col>
           </Row>
-        </Container>
+      
         <h3>
-          <div className="py-5 txt-brands">Manage all your company's spending across mobile, web & corporate cards</div>
+          <div className="py-5 txt-brands text-center mt-4">Manage all your company's spending across mobile, web & corporate cards</div>
         </h3>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mx-auto big-img">
           <img src={productimg} alt="productimage" />
         </div>
         <h2>
-          <div className="py-5 my-1 txt-brands display-6">Take control of your spending</div>
+          <div className="py-5 my-1 txt-brands text-center mt-3 display-6">Take control of your spending</div>
         </h2>
         <div>
           {/*code for first set of cards*/}
-          <Container className="justify-content-center">
-            <Row md={3} xs={1} className="my-2 px-5">
+            <Container className="mb-3" >
+            <Row  md="3" xs="1"sm="1" >
               <Col>
-                {" "}
+                
                 {/*card 1*/}
                 <Card
                   style={{
-                    width: "300px",
-                    height: "230px",
                     backgroundColor: "rgb(255, 251, 242)",
                   }}
-                  className="m-2 body-fstcards"
+                  className="body-fstcards p-4 "
                 >
                   <CardBody>
-                    <CardTitle className="title-fstcards" tag="h4">
-                      {" "}
-                      Real-time visibility{" "}
+                    <CardTitle className="title-fstcards mb-4" tag="h4">
+                      Real-time visibility
                     </CardTitle>
                     <CardText className="text-fstcards text-muted ">
                       You no longer need to wait till the end of the month. Know how money leaves your business in real-time and get actionable insights to make
@@ -121,16 +125,13 @@ const Hero = () => {
                 {/*card 2*/}
                 <Card
                   style={{
-                    width: "300px",
-                    height: "230px",
                     backgroundColor: "#e6fff6",
                   }}
-                  className="m-2 body-fstcards"
+                  className="body-fstcards p-4  "
                 >
                   <CardBody>
-                    <CardTitle className="title-fstcards" tag="h4">
-                      {" "}
-                      Reliable payments{" "}
+                    <CardTitle className="title-fstcards mb-4" tag="h4">
+                      Reliable payments
                     </CardTitle>
                     <CardText className="text-fstcards text-muted ">
                       Sending a payment to one or a thousand? We help you fulfil all your payments with a 99.9% success rate at the best fees.
@@ -143,15 +144,13 @@ const Hero = () => {
                 {/*card 3*/}
                 <Card
                   style={{
-                    width: "300px",
-                    height: "230px",
                     backgroundColor: "#f2f7ff",
                   }}
-                  className="m-2 body-fstcards"
+                  className="body-fstcards p-4"
                 >
                   <CardBody>
-                    <CardTitle className="title-fstcards" tag="h4">
-                      Security{" "}
+                    <CardTitle className="title-fstcards mb-4" tag="h4">
+                      Security
                     </CardTitle>
                     <CardText className="text-fstcards text-muted ">
                       Manage your company's spending with bank-grade security and seamless approval workflow. Say goodbye to manual, error-prone processes
@@ -160,21 +159,29 @@ const Hero = () => {
                 </Card>
               </Col>
             </Row>
-          </Container>
-          <Button className="mx-2  my-3 hero-firstbtn hero-firstbtn:hover">Sign Up Now</Button>
+            </Container>       
+          
+           
+            <div className="text-center">
+                  <Button className="mt-3 mb-5 hero-firstbtn hero-firstbtn:hover btn-fstcards">Sign Up Now</Button>
+                  </div>
+              
+            
+      
+          
 
           {/*code for our partners*/}
           <div className="row justify-content-center partners-bg">
             <h2>
-              <div className="py-5 txt-brands display-5">Our partners</div>
+              <div className="mt-5 pt-3 txt-brands display-5">Our partners</div>
             </h2>
             <p>
-              <div className="text-fstcards text-muted">
+              <div className="text-fstcards text-muted ">
                 As a Leading Spend Management Platform, we are backed by global funds and have reliable payment partners.
               </div>
             </p>
-            <Container className="mx-5 p-5 ">
-              <Row md={6} xs={3}>
+         
+              <Row md={6} xs={3} sm={3} >
                 <Col>
                   <img src={google} alt="google" className="partners-brand p-2" />
                 </Col>
@@ -194,27 +201,22 @@ const Hero = () => {
                   <img src={zedcrest} alt="zedcrest" className="partners-brand p-2" />
                 </Col>
               </Row>
-            </Container>
           </div>
           {/*for carousel*/}
-          <div className="slides-div px-5">
+          <div className="slides-div px-5 ">
             <Slides />
 
             {/*code for features card*/}
           </div>
           <h2>
-            <div className="py-5 txt-brands display-5">Features</div>
+            <div className="py-5 txt-brands display-5 text-center ">Features</div>
           </h2>
           <Container className="">
-            <Row md={3} xs={1}>
+            <Row md="3" sm="1" xs={1}>
               <Col>
-                {" "}
                 {/*card 1*/}
                 <Card
-                  style={{
-                    width: "23rem",
-                  }}
-                  className="features-card m-2"
+                  className="features-card mb-2"
                 >
                   <img
                     alt="approval"
@@ -241,10 +243,7 @@ const Hero = () => {
               <Col>
                 {/*card 2*/}
                 <Card
-                  style={{
-                    width: "23rem",
-                  }}
-                  className="features-card m-2"
+                  className="features-card mb-2 "
                 >
                   <img
                     alt="bulk"
@@ -271,10 +270,7 @@ const Hero = () => {
               <Col>
                 {/*card 3*/}
                 <Card
-                  style={{
-                    width: "23rem",
-                  }}
-                  className="features-card m-2"
+                  className="features-card mb-2 "
                 >
                   <img
                     alt="expense"
@@ -301,10 +297,7 @@ const Hero = () => {
               <Col>
                 {/*card 4*/}
                 <Card
-                  style={{
-                    width: "23rem",
-                  }}
-                  className="features-card m-2"
+                  className="features-card mt-2"
                 >
                   <img
                     alt="subw"
@@ -331,10 +324,7 @@ const Hero = () => {
               <Col>
                 {/*card 5*/}
                 <Card
-                  style={{
-                    width: "23rem",
-                  }}
-                  className="features-card m-2"
+                  className="features-card mt-2"
                 >
                   <img
                     alt="virtual"
@@ -361,10 +351,7 @@ const Hero = () => {
               <Col>
                 {/*card 6*/}
                 <Card
-                  style={{
-                    width: "23rem",
-                  }}
-                  className="features-card m-2"
+                  className="features-card mt-2"
                 >
                   <img
                     alt="overdraft"
@@ -391,36 +378,40 @@ const Hero = () => {
           </Container>
           <div>
             {/*code for security polygon*/}
-            <div className="security-poly ">
+            <Row className="security-poly "> 
+                    <Col sm ="12" md="6" >
+                
               <div className="center-align ">
                 <div className="row justify-content-center ">
-                  <div className="col-md text-md-start security-polytxt">
+                  <div className="text-md-start text-sm-center security-polytxt mt-5 ms-5 me-sm-3 ms">
                     <h2>
-                      <div className="display-6 hero-headingone">Bank Grade Security</div>
+                      <div className="display-6 hero-headingone mt-md-5 ms-md-5 ms-sm-3 me-sm-3">Bank Grade Security</div>
                     </h2>
-                    <h3 className="hero-para ">Banking services provided by Providus Bank which is regulated by Central Bank of Nigeria</h3>
+                    <h3 className="hero-para ms-md-5 ms-sm-2 me-sm-5 ">Banking services provided by Providus Bank which is regulated by Central Bank of Nigeria</h3>
                   </div>
-                  <div className="col-md-4 text-center m-5 ">
-                    <img
-                      className="img-fluid"
-                      src={securityimg}
-                      alt="ladyyellow"
-                      style={{
-                        width: 370,
-                        height: 220,
-                      }}
-                    />
-                  </div>
+                 
                 </div>
               </div>
-            </div>
+          
+                    </Col>
+              <Col sm="12"md="6" >
+              <div className="col-md-12 text-center m-5  ">
+                    <img
+                      className="img-fluid security-img"
+                      src={securityimg}
+                      alt="ladyyellow"
+                    />
+                  </div>
+              </Col>
+            
+            </Row>
             {/*code for news polygon*/}
             <div className="news-poly py-5">
               <h2>
-                <div className="py-5 txt-brands display-5">We are in the news</div>
+                <div className="py-5 txt-brands display-5 text-center">We are in the news</div>
               </h2>
-              <Container className="my-3 p-3 ">
-                <Row md={6} xs={3}>
+             
+                <Row md={6} xs={3} sm={3} className="ms-4">
                   <Col>
                     <img src={guardian} alt="noun" className="news-brand py-2" />
                   </Col>
@@ -440,35 +431,30 @@ const Hero = () => {
                     <img src={talentq} alt="talentq" className="news-brand py-2" />
                   </Col>
                 </Row>
-              </Container>
+             
             </div>
             {/*code for contact us div*/}
-            <Row>
+            <Row className="contact-box m-4">
               <Col sm="6">
                 <h2>
                   <div className="my-3 py-3 txt-brands display-6 contact-title">Contact Us</div>
                 </h2>
                 <p className="contact-para text-muted">Join over 2,500 business today and start spending smarter</p>
-                <div className="">
+                <Row sm="4" >    
                   <a href="https://wa.me/2348090557742" className="contact-nums my-3 p-2 mx-1 ">
                     <img src={whatsapp} alt="whasapp_icon" className="contact-numsimg my-1 " />
                     <h3>+2348090557742</h3>
                   </a>
-
                   <a href="+234-809-055-7742" className="contact-nums my-3 p-2 mx-2 ">
                     <img src={call} alt="whasapp_icon" className="contact-numsimg my-1 " />
                     <h3>+2348090557742</h3>
                   </a>
-                </div>
-
-                <div>
-                  {" "}
                   {/*email*/}
-                  <a href="gethelp@flexfinance.ai" className="contact-email my-4 p-2">
+                  <a href="gethelp@flexfinance.ai" className="contact-email my-1 p-1">
                     <img src={email} alt="whasapp_icon" className="contact-numsimg my-1 " />
                     <h3>gethelp@flexfinance.ai</h3>
                   </a>
-                </div>
+                  </Row>
 
                 <div>
                   {/*social media icons*/}
@@ -520,7 +506,7 @@ const Hero = () => {
                 </div>
               </Col>
               <Col sm="6">
-                <div className="">
+                <div className="col-md-12">
                   <img
                     className="img-fluid contact-img float-end"
                     src={contactus}
@@ -533,15 +519,145 @@ const Hero = () => {
                 </div>
               </Col>
             </Row>
-            {/* <div className="contact-box">
-              
-             
-              
-            </div> */}
+
+
+                    {/*join poly*/}
+                    <div  className="join-poly"> 
+                    <Row className="ms-md-3">   
+                         <Col  sm="12" lg="6" md="6" xl="6" xxl="6" >
+                      <h2  className="join-heading mx-5 display-6">
+                        Join over 2,500 business today and start spending smarter. 
+                      </h2>
+                      </Col>
+                  
+                  <Col  sm="12" lg="6" md="6" xl="6" xxl="6">   
+                  <a href="https://app.flexfinance.ai/#/sign-up/" >
+                          <Button className="hero-firstbtn hero-firstbtn:hover join-btn mt-md-3 ms-md-5 ms-sm-5 mt-sm-3 ">Sign Up Now</Button>
+                          </a>
+                      </Col>
+                  </Row>   
+                    </div>
+
+
+                    {/*footer poly*/}
+                      <div className="footer-poly ">
+                          <Row>
+                            <Col>
+                            <Row>
+                              <Col   sm="12" md="4"  >
+                             <h3>
+                              <div className="footer-header mt-5 ms-4">
+                                COMPANY
+                              </div>
+                             </h3> 
+                             <ul className="footer-ul ">
+                              <li>About Us</li>
+                              <li>Products</li>
+                              <li>Industries </li>
+                              <li>Solutions</li>
+                             </ul>
+                              </Col>
+
+                              <Col  sm="12" md="4" >
+                              <h3>
+                              <div className="footer-header mt-5 ms-4">
+                                PRODUCTS
+                              </div>
+                             </h3>
+                             <ul className="footer-ul">
+                              <li>Approval Workflow</li>
+                              <li>Bulk Payments</li>
+                              <li>Expense Cards</li>
+                              <li>Sub-accounts</li>
+                              <li>Expense</li>
+                              <li>Overdraft</li>
+                             </ul>
+                              </Col>
+
+                              <Col  sm="12" md="4"  >
+                              <h3>
+                              <div className="footer-header mt-5 ms-4">
+                                RESOURCES
+                              </div>
+                             </h3>
+                             <ul className="footer-ul ">
+                              <li>Sign Up Now</li>
+                              <li>Contact Us</li>
+                              <li>Sign In</li>
+                              <li>Pricing</li>
+                              <li>Blog</li>
+                              <li>FAQ</li>
+                             </ul>
+                              </Col>
+                            </Row>
+                            </Col>
+
+                            <Col md="6" sm="12">
+                                   <div className=" float-md-end mt-5 m-sm-3  ">
+                                   <img src={logo} alt="flex-footer" className="footer-logo "/>
+                                      <h6 className="m-2 ">Built with ❤ for buisnesses in Africa</h6>  
+
+                              <div>
+                  <a href="www.facebook.com" className="contact-socials m-2 ">
+                    <img
+                      src={facebook}
+                      alt="socialmediaicon"
+                      style={{
+                        width: 30,
+                      }}
+                    />
+                  </a>
+                  <a href="www.instagram.com" className="contact-socials m-2">
+                    <img
+                      src={instagram}
+                      alt="socialmediaicon"
+                      style={{
+                        width: 30,
+                      }}
+                    />
+                  </a>
+                  <a href="www.twitter.com" className="contact-socials m-2">
+                    <img
+                      src={twitter}
+                      alt="socialmediaicon"
+                      style={{
+                        width: 30,
+                      }}
+                    />
+                  </a>
+                  <a href="www.linkedin.com" className="contact-socials m-2">
+                    <img
+                      src={linkedin}
+                      alt="socialmediaicon"
+                      style={{
+                        width: 30,
+                      }}
+                    />
+                  </a>
+                  <a href="www.youtube.com" className="contact-socials m-2 ">
+                    <img
+                      src={youtube}
+                      alt="socialmediaicon"
+                      style={{
+                        width: 30,
+                      }}
+                    />
+                  </a>
+                </div> 
+                    </div>
+                                     
+                            </Col>
+                          </Row>
+                      </div>
+                      <div className="final-footer text-center">
+                        <p className="final-footerpara pb-3 ">Flex Financial Technologies Ltd 2024, All right reserved</p>
+                      </div>
+            
+           
           </div>
         </div>
-      </div>
-    </div>
+      
+      </>
   );
 };
 
