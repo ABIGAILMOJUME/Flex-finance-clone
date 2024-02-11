@@ -593,7 +593,7 @@ const Hero = () => {
                             </Col>
 
                             <Col md="6" sm="12">
-                                   <div className=" float-md-end mt-5 m-sm-3  ">
+                                   <div className=" float-md-end mt-5 ms-sm-3">
                                    <img src={logo} alt="flex-footer" className="footer-logo "/>
                                       <h6 className="m-2 ">Built with ❤ for buisnesses in Africa</h6>  
 
