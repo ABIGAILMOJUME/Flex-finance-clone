@@ -36,7 +36,7 @@ import youtube from "./images2/youtubesocials2.webp";
 import contactus from "./images2/contactusimage.webp";
 import logo from "./images/Flex (4).webp";
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
-import Slides from "./Slides";
+
 
 const Hero = () => {
   return (
@@ -101,9 +101,9 @@ const Hero = () => {
       </h2>
       <div>
         {/*code for first set of cards*/}
-        <Container className="mb-3">
+        <Container className="">
           <Row md="3" xs="1" sm="1">
-            <Col>
+            <Col className="mt-3 ">
               {/*card 1*/}
               <Card
                 style={{
@@ -123,7 +123,7 @@ const Hero = () => {
               </Card>
             </Col>
 
-            <Col>
+            <Col  className="mt-3">
               {/*card 2*/}
               <Card
                 style={{
@@ -142,7 +142,7 @@ const Hero = () => {
               </Card>
             </Col>
 
-            <Col>
+            <Col  className="mt-3">
               {/*card 3*/}
               <Card
                 style={{
@@ -199,12 +199,9 @@ const Hero = () => {
             </Col>
           </Row>
         </div>
-        {/*for carousel*/}
-        <div className="slides-div px-5 ">
-          <Slides />
-
+        
           {/*code for features card*/}
-        </div>
+        
         <h2>
           <div className="py-5 txt-brands display-5 text-center ">Features</div>
         </h2>
@@ -301,7 +298,7 @@ const Hero = () => {
                   </CardTitle>
 
                   <CardText className=" text-muted py-3" tag="h6">
-                    Create and manage sub-accounts for teams and departments.
+                    Create and manage sub-accounts for teams,staff members and departments.
                   </CardText>
                   <a href="approval-workflow" className="features-anchor features-anchor:hover py-5">
                     View More
@@ -505,7 +502,7 @@ const Hero = () => {
                 <h2 className="join-heading mx-5 display-6">Join over 2,500 business today and start spending smarter.</h2>
               </Col>
 
-              <Col sm="12" lg="6" md="6" xl="6" xxl="6">
+              <Col sm="12" lg="6" md="6" xl="6" xxl="6" className="d-flex justify-content-center">
                 <a href="https://app.flexfinance.ai/#/sign-up/">
                   <Button className="hero-firstbtn hero-firstbtn:hover join-btn mt-md-3 ms-md-5 ms-sm-5 mt-sm-3 ">Sign Up Now</Button>
                 </a>
@@ -561,13 +558,13 @@ const Hero = () => {
               </Col>
 
               <Col md="6" sm="12">
-                <div className="float-md-end mt-5 ms-sm-3" style={{ paddingRight: "15%" }}>
-                  <div className="d-flex justify-content-end">
+                <div className="float-md-end mt-5 ms-sm-3 me-md-3" >
+                  <div >
                     <img src={logo} alt="flex-footer" className="footer-logo " />
                   </div>
                   <h6 className="m-2 ">Built with ❤ for buisnesses in Africa</h6>
 
-                  <div className="d-flex justify-content-center">
+                  <div >
                     <a href="www.facebook.com" className="contact-socials m-2 ">
                       <img
                         src={facebook}
