@@ -368,7 +368,7 @@ const Hero = () => {
                     <h2>
                       <div className="display-6 hero-headingone mt-md-5 ms-md-5 ms-sm-3 me-sm-3">Bank Grade Security</div>
                     </h2>
-                    <h3 className="hero-para ms-md-5 ms-sm-2 me-sm-5 ">
+                    <h3 className="hero-para ms-md-5 ms-sm-2 me-sm-5  ">
                       Banking services provided by Providus Bank which is regulated by Central Bank of Nigeria
                     </h3>
                   </div>
@@ -376,7 +376,7 @@ const Hero = () => {
               </div>
             </Col>
             <Col sm="12" md="6">
-              <div className="col-md-12 text-center m-5  ">
+              <div className="col-md-12 text-center m-5 d-flex justify-content-center  ">
                 <img className="img-fluid security-img" src={securityimg} alt="ladyyellow" />
               </div>
             </Col>
@@ -499,7 +499,7 @@ const Hero = () => {
           <div className="join-poly">
             <Row className="ms-md-3">
               <Col sm="12" lg="6" md="6" xl="6" xxl="6">
-                <h2 className="join-heading mx-5 display-6">Join over 2,500 business today and start spending smarter.</h2>
+                <h2 className="join-heading mx-5 display-6 d-flex justify-content-center">Join over 2,500 business today and start spending smarter.</h2>
               </Col>
 
               <Col sm="12" lg="6" md="6" xl="6" xxl="6" className="d-flex justify-content-center">
