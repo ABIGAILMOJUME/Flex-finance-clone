@@ -69,7 +69,7 @@ const Hero = () => {
         </div>
       </Row>
 
-      <Row md={6} xs={3} sm={3} className="p-3 brands-bg">
+      <Row md={6} xs={2} sm={3} className="p-3 brands-bg">
         <Col>
           <img src={noun} alt="noun" className="brands" />
         </Col>
@@ -178,7 +178,7 @@ const Hero = () => {
             </div>
           </p>
 
-          <Row md={6} xs={3} sm={3}>
+          <Row md={6} xs={2} sm={3}>
             <Col>
               <img src={google} alt="google" className="partners-brand p-2" />
             </Col>
