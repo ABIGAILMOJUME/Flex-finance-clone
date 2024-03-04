@@ -387,7 +387,7 @@ const Hero = () => {
               <div className="py-5 txt-brands display-5 text-center">We are in the news</div>
             </h2>
 
-            <Row md={6} xs={3} sm={3} className="ms-4">
+            <Row md={6} xs={2} sm={3} className="ms-4">
               <Col>
                 <img src={guardian} alt="noun" className="news-brand py-2" />
               </Col>
