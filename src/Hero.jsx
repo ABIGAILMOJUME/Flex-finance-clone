@@ -61,7 +61,7 @@ const Hero = () => {
               </div>
             </Col>
             <Col sm={12} xs="12" md="6">
-              <div className="col-md-12 text-center m-3 mt-sm-5">
+              <div className="col-md-12 text-center mt-sm-5 mt-lg-1">
                 <img className="img-fluid hero-img" src={image} alt="ladyyellow" />
               </div>
             </Col>
@@ -499,7 +499,7 @@ const Hero = () => {
           <div className="join-poly">
             <Row className="ms-md-3">
               <Col sm="12" lg="6" md="6" xl="6" xxl="6">
-                <h2 className="join-heading mx-5 display-6 d-flex justify-content-center">Join over 2,500 business today and start spending smarter.</h2>
+                <h2 className="join-heading mx-5 display-6 d-flex justify-content-center">Join over 2,500 businesses today and start spending smarter.</h2>
               </Col>
 
               <Col sm="12" lg="6" md="6" xl="6" xxl="6" className="d-flex justify-content-center">
