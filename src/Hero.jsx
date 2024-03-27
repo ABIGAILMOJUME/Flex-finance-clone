@@ -368,7 +368,7 @@ const Hero = () => {
                     <h2>
                       <div className="display-6 hero-headingone mt-md-5 ms-md-5 ms-sm-3 me-sm-3">Bank Grade Security</div>
                     </h2>
-                    <h3 className="hero-para ms-md-5 ms-sm-2 me-sm-5  ">
+                    <h3 className="hero-para ms-md-5 ms-sm-2 me-sm-5">
                       Banking services provided by Providus Bank which is regulated by Central Bank of Nigeria
                     </h3>
                   </div>
